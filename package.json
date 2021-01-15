@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "cypress": "^6.1.0",
+    "start-server-and-test": "^1.11.6"
+  },
+  "scripts": {
+    "start": "my-server -p 3030",
+    "cy:run": "cypress run",
+    "test": "start-server-and-test start http://10.163.74.136:3030 cy:run"
+  },
+  "dependencies": {
+    "wait-on": "^5.2.0"
+  }
+}
